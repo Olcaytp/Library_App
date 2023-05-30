@@ -145,5 +145,10 @@ namespace Library_App
             dataGridView1.DataSource = dt;
             connection.Close();
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            list();
+        }
     }
 }

@@ -47,22 +47,22 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.libraryDataSet1 = new Library_App.LibraryDataSet1();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.booksTableAdapter = new Library_App.LibraryDataSet1TableAdapters.BooksTableAdapter();
             this.bookidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.typeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.libraryDataSet1 = new Library_App.LibraryDataSet1();
+            this.booksTableAdapter = new Library_App.LibraryDataSet1TableAdapters.BooksTableAdapter();
             this.label7 = new System.Windows.Forms.Label();
             this.txtFind = new System.Windows.Forms.TextBox();
             this.btnFind = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -191,6 +191,7 @@
             this.btnList.TabIndex = 14;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // btnSave
             // 
@@ -242,20 +243,6 @@
             this.dataGridView1.TabIndex = 18;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // libraryDataSet1
-            // 
-            this.libraryDataSet1.DataSetName = "LibraryDataSet1";
-            this.libraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // booksBindingSource
-            // 
-            this.booksBindingSource.DataMember = "Books";
-            this.booksBindingSource.DataSource = this.libraryDataSet1;
-            // 
-            // booksTableAdapter
-            // 
-            this.booksTableAdapter.ClearBeforeFill = true;
-            // 
             // bookidDataGridViewTextBoxColumn
             // 
             this.bookidDataGridViewTextBoxColumn.DataPropertyName = "Bookid";
@@ -303,6 +290,20 @@
             this.statusDataGridViewCheckBoxColumn.MinimumWidth = 6;
             this.statusDataGridViewCheckBoxColumn.Name = "statusDataGridViewCheckBoxColumn";
             this.statusDataGridViewCheckBoxColumn.Width = 125;
+            // 
+            // booksBindingSource
+            // 
+            this.booksBindingSource.DataMember = "Books";
+            this.booksBindingSource.DataSource = this.libraryDataSet1;
+            // 
+            // libraryDataSet1
+            // 
+            this.libraryDataSet1.DataSetName = "LibraryDataSet1";
+            this.libraryDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // booksTableAdapter
+            // 
+            this.booksTableAdapter.ClearBeforeFill = true;
             // 
             // label7
             // 
@@ -374,8 +375,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.libraryDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
