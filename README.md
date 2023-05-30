@@ -22,10 +22,4 @@ In this project, we made a library application with Microsoft.Access.Database.
   alt="C#"
   width="50"  height="50">
     </a>
-  <a target="_blank"  rel="noreferrer"> 
-  <img
-  src="Library_App\assets\database_icon.png"
-  alt="C#"
-  width="50"  height="50">
-  </a>
 </p>
