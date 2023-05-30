@@ -35,12 +35,12 @@ In this project, we made a library application with Microsoft.Access.Database.
   src="Library_App\assets\1.jpeg"
   alt="Library_App"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
-  
+  <br>
   <img
   src="Library_App\assets\2.jpeg"
   alt="Library_App"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
-  
+  <br>
   <img
   src="Library_App\assets\3.jpeg"
   alt="Library_App"
