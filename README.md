@@ -3,10 +3,10 @@
 
 <h3>Project Explanation</h3>
 In this project, we made a library application with Microsoft.Access.Database.
-- I learned what to do to use microsoft.access.database with this application.
-- We used the OleDbConnection class to use Microsoft.access.database for commands and configurations.
-- Don't forget to download Microsoft AccessDatabaseEngine_x64.exe :)
-- We performed normal crud operations in this project. We put search and find buttons. We made different configurations in search and find, you can check :)
+- I learned what to do to use microsoft.access.database with this application.<br>
+- We used the OleDbConnection class to use Microsoft.access.database for commands and configurations.<br>
+- Don't forget to download Microsoft AccessDatabaseEngine_x64.exe :)<br>
+- We performed normal crud operations in this project. We put search and find buttons. We made different configurations in search and find, you can check :)<br>
 
 <h3>Language and Tools</h3>
 <p>
